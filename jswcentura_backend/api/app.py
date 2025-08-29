@@ -26,7 +26,14 @@ import os
 LOGO_GUIDELINES_PDF_PATH = os.path.join(os.path.dirname(__file__), "JSW Brand Guidelines.pdf")
 RULES_PDF_PATH = os.path.join(os.path.dirname(__file__), "COMP64980.pdf")
 
+from fastapi import FastAPI
 from mangum import Mangum
+
+app = FastAPI()
+
+@app.get("/ping")
+async def ping():
+    return {"message": "pong"}
 
 handler = Mangum(app)
 
