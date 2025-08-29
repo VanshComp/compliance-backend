@@ -1,0 +1,10 @@
+fastapi
+mangum
+pinecone-client
+python-dotenv
+openai
+PyPDF2
+pillow
+pytesseract  # Warn: May not work; see above
+python-docx
+shutil  # Standard lib, no need to install
