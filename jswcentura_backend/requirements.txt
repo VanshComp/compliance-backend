@@ -1,10 +1,9 @@
 fastapi
 mangum
-pinecone-client
 python-dotenv
+pinecone-client
 openai
 PyPDF2
 pillow
-pytesseract  # Warn: May not work; see above
+pytesseract
 python-docx
-shutil  # Standard lib, no need to install
