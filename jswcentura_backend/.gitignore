@@ -1,0 +1,4 @@
+# Environment variables
+.env
+git add .gitignore
+git commit -m "Update .gitignore to exclude .env"
