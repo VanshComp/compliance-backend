@@ -11,3 +11,4 @@ setuptools==68.2.2  # Add this for good measure
 mangum==0.17.0
 pytesseract==0.3.10
 httpx==0.27.0
+python-multipart==0.0.9
