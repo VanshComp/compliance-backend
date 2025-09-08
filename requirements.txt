@@ -8,3 +8,4 @@ python-docx==0.8.11
 tenacity==8.2.3
 jsonschema==4.18.0
 setuptools==68.2.2  # Add this for good measure
+mangum==0.17.0
