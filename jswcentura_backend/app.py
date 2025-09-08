@@ -455,8 +455,8 @@ def extract_text_from_file(file_path: str) -> str:
         elif ext == ".docx":
             doc = Document(file_path)
             return "\n\n".join(p.text for p in doc.paragraphs)
-        elif ext in [".png", ".jpg", ".jpeg", ".webp", ".bmp", ".tiff"]:
-            return pytesseract.image_to_string(Image.open(file_path))
+        # elif ext in [".png", ".jpg", ".jpeg", ".webp", ".bmp", ".tiff"]:
+        #     return pytesseract.image_to_string(Image.open(file_path))
         else:
             with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
                 return f.read()

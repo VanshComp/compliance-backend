@@ -1,11 +1,10 @@
-fastapi
-mangum
-cors
-pinecone-client
-python-dotenv
-openai
-PyPDF2
-pillow
-pytesseract  # Warn: May not work; see above
-python-docx
-shutil  # Standard lib, no need to install
+fastapi==0.100.0
+uvicorn==0.22.0
+mangum==0.17.0
+python-dotenv==1.0.0
+openai==1.3.0
+PyPDF2==3.0.1
+pillow==10.0.0
+python-docx==0.8.11
+tenacity==8.2.3
+jsonschema==4.18.0
