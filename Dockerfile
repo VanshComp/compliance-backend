@@ -1,4 +1,4 @@
-# Use an official Python 3.10 runtime as a parent image (compatible with pillow)
+# Use an official Python 3.10 runtime as a parent image
 FROM python:3.10-slim
 
 # Set working directory
@@ -21,5 +21,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the application code
 COPY . .
 
-# Run the application
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "$PORT"]
+# Run the application with shell to expand $PORT
+CMD uvicorn app:app --host 0.0.0.0 --port $PORT
