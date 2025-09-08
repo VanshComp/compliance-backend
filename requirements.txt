@@ -10,3 +10,4 @@ jsonschema==4.18.0
 setuptools==68.2.2  # Add this for good measure
 mangum==0.17.0
 pytesseract==0.3.10
+httpx==0.27.0

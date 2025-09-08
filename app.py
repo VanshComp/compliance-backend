@@ -27,7 +27,8 @@ MODEL = os.getenv("COMPLIANCE_MODEL", "gpt-4o")
 PASS_THRESHOLD = 95.0
 WARN_THRESHOLD = 80.0
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-client = OpenAI(api_key=OPENAI_API_KEY) if OPENAI_API_KEY else None
+import httpx
+client = OpenAI(api_key=OPENAI_API_KEY, http_client=httpx.Client()) if OPENAI_API_KEY else None
 
 # -------- Regex and Heuristics --------
 SEBI_REG_REGEX = re.compile(r"(SEBI\s*(Reg(istration)?|Reg\.?)\s*(No|Number|#)?\s*[:\-]?\s*[A-Za-z0-9\-/]+)", re.IGNORECASE)
